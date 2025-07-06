@@ -33,28 +33,28 @@ const locais = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-poderpop-black text-poderpop-red font-sans p-4">
-      <header className="flex flex-col items-center mb-8 w-full bg-red-600 py-8 px-4 rounded-xl">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-poderpop-black text-poderpop-red font-sans p-0 sm:p-4 px-2 sm:px-4 w-full max-w-full overflow-x-hidden">
+      <header className="flex flex-col items-center mb-8 w-full max-w-full bg-red-600 py-1 sm:py-2 px-1 sm:px-4 rounded-xl">
         <div className="w-full flex justify-center items-start">
           <Image
             src="/logo.png"
             alt="Logo Poder Popular"
             width={320}
             height={180}
-            className="object-contain"
+            className="object-contain mb-0 sm:w-[320px] sm:h-[180px]"
             priority
           />
         </div>
-        <h1 className="text-4xl font-bold tracking-tight uppercase text-white text-center drop-shadow-lg">
+        <h1 className="mt-0 text-2xl sm:text-4xl font-bold tracking-tight uppercase text-white text-center drop-shadow-lg">
           PED 2025 - Eleições Internas do PT
         </h1>
-        <p className="mt-6 text-lg text-white text-center max-w-2xl">
+        <p className="mt-3 text-base sm:text-lg text-white text-center max-w-2xl">
           Participe das eleições internas do Partido dos Trabalhadores! Confira abaixo os locais de votação do PED 2025 em Maricá e acesse o mapa para chegar até o seu local.
         </p>
       </header>
 
       {/* Card de Candidatos */}
-      <section className="w-full max-w-xl bg-gradient-to-br from-white via-gray-200 to-gray-400 border-2 border-gray-300 rounded-2xl shadow-xl p-6 flex flex-col gap-2 mb-6">
+      <section className="w-full max-w-full sm:max-w-xl bg-gradient-to-br from-white via-gray-200 to-gray-400 border-2 border-gray-300 rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col gap-2 mb-6">
         <div className="flex flex-col items-center gap-2">
           <div className="flex flex-wrap justify-center gap-2 text-2xl font-extrabold uppercase">
             <span className="text-red-600">DIEGO</span>
@@ -77,7 +77,7 @@ export default function Home() {
       </section>
 
       {/* Card de Votação */}
-      <section className="w-full max-w-xl bg-gradient-to-br from-white via-gray-200 to-gray-400 border-2 border-gray-300 rounded-2xl shadow-xl p-6 flex flex-col gap-4 mb-8">
+      <section className="w-full max-w-full sm:max-w-xl bg-gradient-to-br from-white via-gray-200 to-gray-400 border-2 border-gray-300 rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col gap-4 mb-8">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <span className="bg-black text-white px-2 py-1 rounded font-bold text-lg">180</span>
@@ -112,12 +112,12 @@ export default function Home() {
         </div>
       </section>
 
-      <main className="w-full max-w-xl rounded-lg shadow-lg p-6 flex flex-col gap-4">
+      <main className="w-full max-w-full sm:max-w-xl rounded-lg shadow-lg p-4 sm:p-6 flex flex-col gap-4">
         <h2 className="text-2xl font-semibold bg-red-600 text-white rounded-lg px-6 py-2 mb-2 text-center">Locais de Votação</h2>
         <ul className="flex flex-col gap-3">
           {locais.map((local) => (
-            <li key={local.nome} className="flex items-center justify-between bg-red-600 rounded px-4 py-2 group">
-              <span className="text-lg font-bold text-white uppercase tracking-wide group-hover:text-yellow-400 transition-colors">
+            <li key={local.nome} className="flex flex-nowrap items-center justify-between bg-red-600 rounded px-2 sm:px-4 py-2 group">
+              <span className="flex-1 text-xs sm:text-base md:text-lg font-bold text-white uppercase tracking-wide truncate group-hover:text-yellow-400 active:text-yellow-400 focus:text-yellow-400 transition-colors">
                 {local.nome}
               </span>
               {local.link ? (
@@ -125,7 +125,7 @@ export default function Home() {
                   href={local.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="ml-4 px-3 py-1 rounded font-bold text-sm text-white bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 shadow-md hover:shadow-lg hover:scale-105 transition-all border border-yellow-500"
+                  className="ml-2 sm:ml-4 w-auto min-w-[80px] sm:min-w-[96px] flex-shrink-0 flex justify-center items-center rounded font-bold text-xs sm:text-sm text-white bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 shadow-md hover:shadow-lg hover:scale-105 transition-all border border-yellow-500 px-2 sm:px-3 py-1"
                 >
                   Ver mapa
                 </a>
@@ -138,15 +138,15 @@ export default function Home() {
       </main>
 
       {/* Imagem motivos Diego - agora antes do footer */}
-      <div className="w-full flex justify-center mb-8">
+      <div className="w-full max-w-full flex justify-center p-0 m-0">
         <img
-          src="/motivos-diego.png"
+          src="/motivos-diego.JPG"
           alt="3 motivos para votar Diego para presidente do PTRJ"
-          className="max-w-xs sm:max-w-md md:max-w-lg w-full h-auto bg-white"
+          className="w-full max-w-xs sm:max-w-md md:max-w-lg h-auto bg-white p-0 m-0 border-none shadow-none"
         />
       </div>
 
-      <footer className="w-full mt-10 text-center text-xs bg-red-600 text-white flex flex-col items-center gap-2 py-4">
+      <footer className="w-full mt-0 text-center text-xs bg-red-600 text-white flex flex-col items-center gap-2 py-4">
         <span>&copy; {new Date().getFullYear()} PED 2025 - Poder Popular / PT Maricá</span>
         <a
           href="https://www.instagram.com/poderpopular_oficial?igsh=MTlkY3ZmNjFjN2Nmdg=="

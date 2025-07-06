@@ -1,1 +1,12 @@
-<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768">
+  <rect width="768" height="768" fill="#fff"/>
+  <text x="50%" y="38%" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="140" fill="#D0021B" font-weight="bold" letter-spacing="0.05em">PODER</text>
+  <text x="50%" y="68%" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="140" fill="#D0021B" font-weight="bold" letter-spacing="0.05em">POPULAR</text>
+  <g transform="translate(540, 210) scale(2.2)">
+    <path d="M20 30 Q20 10 40 10 Q60 10 60 30 Q60 50 40 50 Q20 50 20 30 Z" fill="#D0021B"/>
+    <rect x="42" y="0" width="8" height="18" rx="4" fill="#D0021B"/>
+    <rect x="32" y="0" width="8" height="18" rx="4" fill="#D0021B"/>
+    <rect x="22" y="0" width="8" height="18" rx="4" fill="#D0021B"/>
+    <rect x="12" y="10" width="8" height="18" rx="4" fill="#D0021B"/>
+  </g>
+</svg> 

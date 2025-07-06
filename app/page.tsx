@@ -36,14 +36,14 @@ export default function Home() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-poderpop-black text-poderpop-red font-sans p-0 sm:p-4 px-2 sm:px-4 w-full max-w-full overflow-x-hidden">
       <header className="flex flex-col items-center mb-8 w-full max-w-full bg-red-600 py-1 sm:py-2 px-1 sm:px-4 rounded-xl">
         <div className="w-full flex justify-center items-start">
-          <Image
-            src="/logo.png"
-            alt="Logo Poder Popular"
+        <Image
+          src="/logo.png"
+          alt="Logo Poder Popular"
             width={320}
             height={180}
             className="object-contain mb-0 sm:w-[320px] sm:h-[180px]"
-            priority
-          />
+          priority
+        />
         </div>
         <h1 className="mt-0 text-2xl sm:text-4xl font-bold tracking-tight uppercase text-white text-center drop-shadow-lg">
           PED 2025 - Eleições Internas do PT
